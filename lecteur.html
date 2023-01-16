@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Video Player</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
+
+    <link rel="stylesheet" href="lecteur.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="touteVid">
+            <video src="oui.mp4" class="video"></video>
+
+            <div class="controls">
+                <div class="orange-bar">
+                    <div class="orange-liquide"></div>
+                </div>
+
+                <div class="buttons">
+                    <button id="play-pause"></button>
+                    <button id="mute">Mute</button>
+                    <input type="range" id="volumeSlider" type="range" min="0" max="100" value="60" step="1">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="lecteur.js"></script>
+</body>
+
+</html> 

@@ -1,0 +1,94 @@
+html {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display:flex;
+    background: rgb(34,32,32);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.video {
+    width: 100%;
+}
+
+.touteVid {
+    width: 100%;
+    max-width: 800px;
+    position: relative;
+    overflow: auto;
+}
+
+
+.controls {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    flex-wrap: wrap;
+    background: rgba(0,0,0,0.7);
+
+    transform: translateY(100%) translateY(-5px);
+    transition: all 0.2s;
+}
+
+.touteVid:hover .controls {
+    transform: translateY(0);
+}
+
+
+.buttons {
+    padding: 10px;
+}
+
+
+.buttons button {
+    background: none;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    color: #fff;
+}
+
+#mute {
+    position: relative;
+    top: -5px;
+}
+
+.buttons #play-pause::before {
+
+    content: '\f144';
+    font-family: 'Font Awesome 5 free';
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    font-size: 28px;
+    color: #fff;
+}
+
+.buttons #play-pause.play::before {
+    content: '\f144';
+}
+
+.buttons #play-pause.pause::before {
+    content: '\f28b';
+}
+
+.orange-bar {
+    height: 10px;
+    width: 100%;
+    background: #000;
+    cursor: pointer;
+}
+
+.orange-liquide {
+    height: 10px;
+    background-color: orangered;
+} 
